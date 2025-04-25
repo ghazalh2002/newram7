@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahu's Cinema 🍿</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="cinema-container">
+    <div class="marquee">
+      <p>🎥 Welcome to ghazalh Magical Movie Theater 🍿 — Enjoy the show! 🎬</p>
+    </div>
+    
+    <h1 class="cinema-title">✨ ghazalh Cinema ✨</h1>
+
+    <div class="blinking-lights"></div>
+
+    <div class="video-wrapper">
+      <video id="movie" controls>
+        <source src="media4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="controls">
+        <button onclick="document.getElementById('movie').currentTime = 0; document.getElementById('movie').play();">▶ Play Again</button>
+        <button onclick="alert('Thanks for rating!')">⭐ Rate Movie</button>
+      </div>
+    </div>
+
+    <div class="blinking-lights bottom"></div>
+  </section>
+</body>
+</html>

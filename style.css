@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: radial-gradient(circle, #000000 50%, #1a1a1a);
+    color: white;
+    text-align: center;
+  }
+  
+  .cinema-container {
+    padding: 30px;
+  }
+  
+  .marquee {
+    background: #ff0000;
+    color: yellow;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 0 10px yellow;
+  }
+  
+  .marquee p {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .cinema-title {
+    font-size: 18px;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #ffcc00;
+  }
+  
+  .video-wrapper {
+    display: inline-block;
+    padding: 20px;
+    border: 10px solid #ffcc00;
+    border-radius: 15px;
+    box-shadow: 0 0 30px red, 0 0 60px orange;
+    background-color: black;
+    position: relative;
+  }
+  
+  video {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #fff;
+  }
+  
+  .controls {
+    margin-top: 15px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    cursor: pointer;
+    box-shadow: 0 0 5px #fff;
+    transition: background 0.3s;
+  }
+  
+  .controls button:hover {
+    background: #ff9900;
+  }
+  
+  .blinking-lights {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .blinking-lights::before,
+  .blinking-lights::after {
+    content: "✨✨✨✨✨✨✨✨✨✨";
+    animation: blink 1s infinite;
+    font-size: 20px;
+    color: gold;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+  }
